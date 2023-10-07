@@ -1,26 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import ClockControl from './components/ClockControl';
+import Clock from './components/Clock';
+import Blog from './components/Blog';
+import Form from './components/Form';
+import SearchBar from './components/SearchBar';
+import BookList from './components/BookList';
 
+import { useState } from 'react';
 
 function App() {
-  function formatUser(user){
-    return user.firstName + " " + user.lastName;
-  };
 
-  function getGreeting(user) {
-    if(user){
-      return <h1>Hello, {formatUser(user)}</h1>
-    }
-    return <h1>Hello, Stranger</h1>
-  }
-  const user = {
-    firstName: "Mikha",
-    lastName: "Amzar"
-  };
+  // const bookList = [
+  //   "48 Laws of Power",
+  //   "Twilight",
+  //   "Harry Potter",
+  //   "Narnia",
+  //   "The Art of War"
+  // ];
   
-  const name = "Mikhail Amzar"
-  // const element = <h1>Hello, World</h1>
-  return <div>{getGreeting(user)}</div>;
+  return (
+    <>
+
+    </>
+  );
 }
 
 export default App;
